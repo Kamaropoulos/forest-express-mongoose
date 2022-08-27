@@ -1,6 +1,5 @@
 import { Application, NextFunction, Request, RequestHandler, Response } from 'express';
 import {
-  ConnectionOptions,
   Mongoose,
   Connection,
   Model,
@@ -29,7 +28,7 @@ export interface DatabaseConfiguration {
   modelsDir: string,
   connection: {
     url: string,
-    options: ConnectionOptions,
+    options: any,
   }
 }
 
